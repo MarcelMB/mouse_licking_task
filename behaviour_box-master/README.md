@@ -1,4 +1,4 @@
-Behaviour Box
+Behaviour Box_software developed in paper_our software based on this
 =============
 
 This repository contains a set of files to implement a Go-No-Go
