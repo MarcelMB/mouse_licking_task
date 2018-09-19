@@ -22,7 +22,10 @@ char runTrial() {
     int rew_count = 0;
     //int N_to;                              //number of timeouts
     // local time
+
     t_init = millis();
+//=======
+    
     t = t_since(t_init);
 
     /*trial_phase0
@@ -40,9 +43,13 @@ char runTrial() {
     //wait
     //pre_count0 += ActiveDelay(t_noLickPer, false); //animal should not lick in time of t_noLickPer
     //t=t_since(t_init);
+
     digitalWrite(trialPin, HIGH);
     pre_count1 += ActiveDelay(t_stimONSET, true);
     //t=t_since(t_init);
+
+    pre_count1 += ActiveDelay(t_stimONSET - t, true);
+    t=t_since(t_init);
 
     if ((pre_count1>0)){ //if animal licked (so t_noLickPer is true) in the duration of t_noLickPeriode
 
@@ -64,7 +71,7 @@ char runTrial() {
     
         return response;
     }
-    
+
 
     pre_count=pre_count0+pre_count1;
 
@@ -76,12 +83,15 @@ char runTrial() {
     TrialStimulus(); //here tone is played
      
 
+
     
 
 //we dont want to delay cheking for licks after stimulus
 //ActiveDelay(t_rewardDEL,false); //delay checking for licksafter the stimulus  //here the if statments in states.h ActiveDelay are ignored since the inout to the fucntion is false
 
 //t=t_since(t_init);
+
+t=t_since(t_init);
    post_count += ActiveDelay(t_rewardDUR,lickTrigReward, true); //get licks after tone onset till reward, the reward comes right after the t_rewardDUR, t_rewardDUR is the time from stimulus onset till the delivery of reward
 
 //if ((t_since(t_init)-t) < t_rewardDUR) {

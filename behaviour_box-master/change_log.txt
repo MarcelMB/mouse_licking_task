@@ -1,0 +1,610 @@
+* 2debbbb	 (HEAD -> master, origin/master, origin/HEAD) version number
+* 69487e1	 should fix reward delay
+* fd92934	 prevents reward time from blowing out punishment
+* a6b5caa	 experiment status
+* ad14278	 unknown
+* 63be1ea	 fixes timout during stimulus'
+*   9bae419	 Merge branch 'master' of https://bitbucket.org/andrew_henry_micallef/behaviour_box
+|\  
+| * b59b033	 Moves stimulus function to single port file
+| * cfefbba	 counts responses during stimulus
+* | 881a340	 hotfixes and revisions particularly of python controller
+|/  
+* 482e048	 Declares and activates buzzerPin
+* d4997f5	 runtime fixes
+*   d78d02b	 Merge branch 'master' of https://bitbucket.org/andrew_henry_micallef/behaviour_box
+|\  
+| * e615b53	 Consolidate single port changes
+| * 04b9655	 Consolidate single port changes
+| * ae3cff8	 Consolidate single port changes
+| * 372eccd	 Reduces count to only track rising events
+* | 160da3f	 Needs to fix count still
+|/  
+* 93b983b	 Experiment day fixes
+* 50bd07b	 Fixes compile errors
+* 6cd082e	 makes the go no go code much simpler
+* a421c75	 replaces get_response
+* 1dad5aa	 fixes no lick period
+* d3d3de1	 Experminent state
+* dd72fcb	 Hotfix, to get the reward to come
+* 610ad3f	 Adds pretrial cue
+* 1909c5e	 (origin/single_stim) Single stim ready
+* c05bccf	 Makes the operant mode single port operable
+* 6685991	 habituation run
+* ea192ef	 habituation changes
+*   75f1b50	 Merge branch 'master' of https://bitbucket.org/andrew_henry_micallef/behaviour_box
+|\  
+| * b91eb69	 necessary function for current setup with signle port
+| *   4bc3da8	 Merge branch 'single_port'
+| |\  
+| | * 01914da	 Update version number
+| | * 14c8c8f	 Removes all mention of auditory
+| | * 82b58c1	 Hotfix
+| | * c20e0e0	 Adds flag for number of ports
+| | * 188f2c5	 Cleans up the main loop
+| | * 29cec84	 formatting
+| | * 554a3f2	 Duplicates get response
+* | | 934f027	 (return_to_piezo) fixes habituation output for single port
+| |/  
+|/|   
+* |   737d775	 (origin/return_to_piezo) Merge branch 'return_to_piezo' of https://bitbucket.org/andrew_henry_micallef/behaviour_box into return_to_piezo
+|\ \  
+| * | ad9612e	 This
+| * |   cefb827	 Merge branch 'return_to_piezo' of https://bitbucket.org/andrew_henry_micallef/behaviour_box into return_to_piezo
+| |\ \  
+| * \ \   761d2a5	 Merge branch 'master' into return_to_piezo
+| |\ \ \  
+| | | |/  
+| | |/|   
+| | * | 2bd220c	 (return_II) Fix to init stim
+| | * | a5a4dc7	 Fixes menu
+| | * | dc352e2	 Fixes inter stim interval in arduino
+| | * | 2f7bd0c	 Fixes timing communication with arduino
+| | * | 92177b7	 updates readme
+| | * | 69b3265	 Improves single stim mode
+| | * | 24c1ddb	 Fixes trial stimulus logic
+| | * | 02d0214	 Fixes syntax error in args
+| | * | 55c57a7	 Makes the stimulus defined by onset and inter stim interval 	modified:   README.html 	modified:   README.md 	modified:   SerialControl.py 	modified:   behaviourbox/behaviourbox.ino 	modified:   utilities/args.py
+| | * | d2cffc6	 Readme update
+| | * | 365b72f	 Readme update
+| | * |   afd943a	 Merge branch 'master' into remove_flutter
+| | |\ \  
+| | | * | 29d57bd	 restore Flow diagram
+| | * | | c27623b	 don't care
+| | * | | 955fcd9	 update readme
+| | * | | 7d4a05c	 Removes Fluter fucntion
+| | |/ /  
+| | * | 232aa11	 Fixes nameing error
+| | * | 12e500a	 Updates version number
+| | * | 564a5d6	 Updates changes
+| | * | edce035	 Updates the TODO list
+| | * | 9b86365	 (origin/Stim_duration_condition) Starts trackign the documentation
+| | * |   53896f8	 Merge branch 'master' into Stim_duration_condition
+| | |\ \  
+| | | * | d6de26e	 Fixes image location
+| | * | | 5d856d2	 edits to Readme
+| | * | | 6924fa7	 Makes reward period determined by a delay and duration 	modified:   SerialControl.py 	modified:   behaviourbox/behaviourbox.ino 	modified:   utilities/args.py
+| | * | | 0638bbc	 Moves diagram to documentation folder
+| | * | | 972f4a7	 Removes freq argument
+| | * | | e7a72e7	 Makes args a dictionary
+| | * | | ce2a5ce	 Replaces Off with duration in Serial Control
+| | * | | 6730a22	 Replaces intensity with duration in habituation
+| | * | | 2f22737	 Updates Version string
+| | * | | 7e956d6	 Adds OFF to update globals
+| | * | | 3631188	 Adds OFF to global variables
+| | * | |   fccb914	 Merge branch 'master' into Stim_duration_condition
+| | |\ \ \  
+| | | |/ /  
+| | * | | 90e13eb	 Fixes TrialStimulus refactor and replaces OFF with DUR
+| | * | | 1de271c	 Adds -dur argument to Serial Control'
+| | * | | 6046a5e	 Formatting changes
+| | * | | d5fee98	 Reorders TrialStimulus logic to prevent multiple checks for auditory or non-stimulus
+| | * | | 54fe006	 Adds duration argument to TrialStimulus function
+| | * | | 76f371d	 Removes sense lick from TrialStimulus
+* | | | | 610fd83	 Fixes to compile
+| |_|_|/  
+|/| | |   
+* | | |   58d2bb3	 Merge branch 'frequency_discrimination' into return_to_piezo
+|\ \ \ \  
+| |/ / /  
+|/| | |   
+| * | | 833ad95	 (frequency_discrimination) Go No Go with duration discrimination
+* | | | 436765a	  A lot of changes man  Changes to be committed: 	modified:   ../SerialControl.py 	modified:   SerialComms.h 	modified:   behaviourbox.ino 	modified:   functions.h 	modified:   global_variables.h 	deleted:    mpr121.h 	modified:   timing.h 	modified:   ../utilities/args.py
+* | | | dd19049	 removes the MPR121 dependancy
+* | | | 7c554ee	 (origin/capacitive_sensor) Fixes Errors preventing compile
+* | | | 6e62cef	 all the things
+* | | | 2886a26	 include dependancies for real
+* | | | 122c059	 updated documentation
+* | | | 22560fa	 includes dependancies
+* | | | 21e1e41	 Reorginisation to make capacitive sensing ready 	new file:   SerialComms.h 	modified:   behaviourbox.ino 	copied:     behaviourbox.ino -> functions.h 	new file:   global_variables.h 	new file:   mpr121.h 	new file:   sensors.h 	new file:   timing.h
+|/ / /  
+* | | 50ea542	 (origin/frequency_discrimination) experiment run
+* | | e88b1d5	 GO NO GO ready to go
+* | | 5a2345f	 logging fixes
+* | | 210c881	 workable
+* | | bf21f28	 Fixes syntax errors
+| | | *   8d11f28	 (refs/stash) WIP on frequency_discrimination: 197572a fixes things
+| | | |\  
+| |_|/ /  
+|/| | |   
+| | | * 7a03b11	 index on frequency_discrimination: 197572a fixes things
+| |_|/  
+|/| |   
+* | | 197572a	 fixes things
+* | | 1da62a0	 Go No Go
+| | | * e0fd053	 (origin/160617Imaging, 160617Imaging) start of today
+| | | * fa354fb	 (frequency_perception) Hotfix
+| |_|/  
+|/| |   
+* | | 6d6c258	 (origin/frequency_perception) makes frequency perception run
+* | | b41e179	 (origin/V1.0_Frequency_Discrimination) moves image to documentation folder
+* | | d5381a3	 Updates readme for V1
+| |/  
+|/|   
+* | 94de5e1	 README.md edited online with Bitbucket
+* | b7fa2d8	 Adds a joke to the Readme
+* |   eeddaef	 Merge branch 'master' of bitbucket.org:andrew_henry_micallef/behaviour_box
+|\ \  
+| * | b488991	 Fixes up the logic of requiring x number on either port
+| * | 94c97b5	 Adds option to plot old data by using a third argument for DATAPATH
+| * | 1b5d3b9	 Fixes multiple csv files generated by SerialControl
+* | | 6e61167	 Updates README
+|/ /  
+* | 4e1563d	 Ignores website specific files
+* | b52703e	 documents changes
+* | a468a63	 ignores the htm file
+|/  
+*   64b923a	 Merged
+|\  
+| * 27b1197	 Fixes no responses not being plotted after first loop
+| * f2a7c40	 Makes no lick break silently and does not count in stats 	modified:   SerialControl.py 	modified:   behaviourbox/behaviourbox.ino
+| * f993674	 Forces at least three succesful trials on non-biased side after a run of 5 on a biased port
+| * 29c6564	 Update change log
+| * 5da73c7	 prevent runs of more than 5 on any side
+| * d625f9f	 Makes update bbox more pythonic
+| * f39761b	 stylistic modifications
+| * b8ebd72	 brings plot stats in line with previous script
+| * dda60ec	 Revises plot_stats
+| * b9cba71	 Major revisions incomplete
+| * b535add	 Formatting and automates set datapath
+| * b7da6a6	 Begins to convert plot_stats
+| * 992b985	 Replaces downsample with rolling mean
+| * ce00661	 Moves plot stats to the base dir
+| * 5e9933c	 Moves plot stats to the base dir
+| * 99a70fc	 Minor edits to readme
+| * 44c6595	 Minor edits to readme
+| * 16a6ae1	 Minor edits to readme
+| * 040233a	 Adds a change log :)
+| * d15b135	 Removes more old files
+| * 06b86e9	 removes useless files
+| * ccea58b	 Adds a descriptive header
+* | 751bc89	 discusses habituation mode
+* | 8f9f93f	 Updates Readme with a usefull figure
+* |   b85fa92	 Merge branch 'master' of https://bitbucket.org/andrew_henry_micallef/behaviour_box
+|\ \  
+| |/  
+| * 4be45a0	 Adds a rudimentary bokeh App for plotting
+| * cba11f2	 Speeds up transfer to bbox -- risks fucking everything
+| *   c9f3923	 Merge branch 'experiment160531'
+| |\  
+| | * 17200be	 (origin/experiment160531) Status of programs as at 160531
+| * | 8be515d	 Adds a bokeh app for plotting online stats
+| |/  
+| * 63d5312	 Makes time out tone on enter timeout only
+* | 8785d72	 Makes waterVol accessable from serialcom
+* | 2beaa41	 Removes unnecessary variables
+* | e3152b8	 Removed bloat
+|/  
+* ae3f6f2	 Experiment changes
+* 607a790	 makes lickThres default to float
+* 3bc3128	 changes version number
+* 94bc67b	 (origin/fix_lickreport) Fixes declaration of bad response
+* bd1ac14	 Makes reward_count a byte instead of char
+* c75f83d	 fixes error in initiiating bias correction
+* d31615d	 Fixes adaptive bias correction
+* 73411c6	 Fixes reward end communication
+* f7679ec	 Removes debug print
+* a7b32d5	 Fixes bias correction and add t_rewardEND to Serial control
+* f18ffcc	 Fixed ternary syntax
+* 8a50f28	 Adds bias correction option and menu toggle
+* 5530ffe	 Modifies the random selection to allow bias correction
+* 0fa04e5	 FIxes counter rollover with ternary operator
+*   0a3bfe4	 Merge
+|\  
+| * db0836a	 Can get more than ten in a row
+| * b6d9d2d	 Adds color to habituation
+| * 37eb9a9	 Counts in boolean
+| * e3cfc04	 Completes Bias mitigation on habituation
+| * 558af3a	 fixes a bug to prevent rollover
+| * 8e332f4	 Modifications to make habituation log work
+* | 621a833	 tmp
+* | c73656e	 Fixes habituation response logic
+|/  
+* 853c5d1	 Moves habituation run to a seperate function
+* e1147c7	 Splits habituation into sepreate loop and counts responses
+* f801d8d	 Fixed Syntax errors
+* 299515b	 finishes upper_limit for habituation
+*   9e2c283	 Merge
+|\  
+| * 832ac55	 Makes stimulus at 2s and 2.55s respectivley
+| * d649c11	 Fixes finite trial duration
+* | 952b1f9	 Adds a reward delivery funtion
+* | 3506cf0	 Fixes formatting
+* | 5f621d8	 Refactors manual over-ride condition switch
+* | ed4e08d	 Minor formatting
+* |   42b03db	 Merge branch 'refactor_serial'
+|\ \  
+| * | 9dfa525	 formatting
+| * | 5b0a056	 Reformat print results statement
+| * | 7e0bbde	 Adds  to Habituation loop
+| * | 4e73291	 (origin/refactor_serial) Adds read-out to the habituation method
+| * | d824578	 unknown
+| * | 2f49252	 Adds a pause after the reward delivery
+| * | 14d93b7	 Removes the trailEND variable and fixed trial duration
+| |/  
+* | 78399ff	 Adds goals for seperate branchs
+|/  
+* dd9e79b	 Cosmetic changes to args.py
+* fb7075a	 trialDuration no longer must be an int, can be float too
+* 5125c2e	 Restores finite duration trials
+* 74c5abb	 Experiment code 160403
+*   cfdb4e5	 Merge branch 'master' into fixes_timeout
+|\  
+| *   1e761cd	 Merge branch 'master' of https://bitbucket.org/andrew_henry_micallef/behaviour_box
+| |\  
+| | * 36c6d94	 Adjusts timing parameters of bbox  Changes to be committed: 	modified:   behaviourbox/behaviourbox.ino
+* | | e6a3e46	 Fixes timeout
+|/ /  
+* |   29e33b1	 Merge branch 'master' of https://bitbucket.org/andrew_henry_micallef/behaviour_box
+|\ \  
+| |/  
+| * 3c2972c	 Hot fixes to run exp
+| * 822eaf4	 guo_style changes to timing
+| *   0567ef6	 Merge branch 'guo_2014'
+| |\  
+| | * 66633e7	 (origin/guo_2014) Attempts to bring behaviour box inline with guo_2014  Changes to be committed: 	modified:   ../SerialControl.py 	modified:   behaviourbox.ino 	modified:   ../utilities/args.pyc
+| | * b2fb2e2	 (origin/working) Fixes concactination without duplicates
+* | |   2ee8e2e	 Merge branch 'master' of https://bitbucket.org/andrew_henry_micallef/behaviour_box
+|\ \ \  
+| |/ /  
+| * | 47b75d6	 Makes timeout noise last duration of timeout
+| |/  
+| * dfbb3db	 Concactonates the old csvs into one data frame
+| * e199464	 Adds reward time flag
+| * 3771029	 Fixes ITI for rewarded and no reward conditions
+| * 22a5671	 Adds t_rewardStart option
+| * 0d7496a	 Fixes Timeout; Adds t_RewardStart as arduio otion
+| * 2253d9e	 Fixes Bugs
+| *   323fd64	 Merge updatae
+| |\  
+| * | 8970c6b	 Adds single stim mode and Habituation loop to controller
+* | | 8845257	 wip
+| |/  
+|/|   
+* | 653dea5	 Adds color to menu
+* | 2d7f6f0	 Adds Pause functiality to menu
+* | 4a17556	 Makes hit rate display for all dataframe
+* | 43daf3f	 (origin/timeout) Adds Timeout functionality to the behaviour box
+* | f5c8303	 adds menu for timeout
+* | cc0a04d	 Adds timeout variable to arguements
+* | 1685e12	 Rewords `-lp` as `-nlp`'
+* | d94d2ce	 Adds shorthand for trialDur `-td`'
+|/  
+*   b2d9291	 merge
+|\  
+| * d7edebf	 Makes the updated version work
+* |   3677989	 Merge branch 'auditory'
+|\ \  
+| |/  
+|/|   
+| * 8416830	 (origin/auditory) Adds single stim capability
+* |   53e5b75	 Merge branch 'master' of https://bitbucket.org/andrew_henry_micallef/behaviour_box
+|\ \  
+| * | 74f272d	 README.md edited online with Bitbucket
+| |/  
+* | acc7665	 Adds options to the online menu
+|/  
+* 133ad5e	 Updates SeriaComs to work with the new behviourbox
+* b9e21de	 Adds Option for auditory stimulus
+* 05279d2	 Unkown changes
+| * ac561cf	 (origin/version160321) This is the version of the code used for experiments up till 160321
+|/  
+* ad20a5e	 Low frequency and returned to previous countstyle
+| * b3fbcc9	 (origin/MohamedPrototype) Struct Initialization + Sensor
+| | * dc3161b	 (origin/integrate) saved at experiment time
+| | * 95de914	 Requires more licks on correct port in fixed time
+| |/  
+|/|   
+* |   3522654	 Merge branch 'master' of https://bitbucket.org/andrew_henry_micallef/behaviour_box
+|\ \  
+| * | dccae42	 README.md edited online with Bitbucket
+| * | 2971ad2	 README.md edited online with Bitbucket
+| * | 81d3b68	 README.md edited online with Bitbucket
+| * | 23c89ca	 README.md edited online with Bitbucket
+* | | 3b40f91	 Fixes issues created today
+|/ /  
+* | f76bda7	 Removes ITI penalty for incorrect trials
+* | a4f422c	 Speeds up trial rate and adds lick early penalty
+* | 690c86c	 (origin/no_ITI) Removes ITI to make this more like a gambling machine
+* | 313d5ba	 Fixes randomisation
+* | f174ff1	 opens logfile only when needed and loops for repeats
+* | 9cb3f7d	 Fixes the randomiser and timings
+* |   fbaf4a7	 Merge branch 'master' of https://bitbucket.org/andrew_henry_micallef/behaviour_box
+|\ \  
+| * | 72477cd	 all the stuff
+* | |   96f25fe	 Merge branch 'master' of https://bitbucket.org/andrew_henry_micallef/behaviour_box
+|\ \ \  
+| |/ /  
+| * | 1290086	 Makes left right selection permenant
+| * | 85af91d	 Makes left right selection permenant
+* | | 20ff3a4	 Fixes spike counting
+* | |   8977119	 Merge branch 'master' of https://bitbucket.org/andrew_henry_micallef/behaviour_box
+|\ \ \  
+| |/ /  
+| * | a280d3e	 Removes pointer cleverness bullshit
+* | | 5c9427b	 misc fixes
+|/ /  
+* | 5ea081b	 fixes operant bug?
+* | 14cc265	 Buggy operant??
+* | ccb37a1	 The current version on experiment day
+* | 3b10194	 fixes spelling
+* | 3f27850	 Adds warning of oudatedness
+* | c48b653	 Removes unnessacary imports
+* |   ba44208	 Merge branch 'master' into Version0
+|\ \  
+| * | ee73858	 Removes header files fixes syntax errors
+* | | 8bbde57	 (origin/Version0) Refactors Serial control to work with bbox
+|/ /  
+* |   5086517	 merge
+|\ \  
+| * | ef6afd3	 makes the timer use long integers
+| * | 14c6e36	 (origin/Blocking) Refactor code: globals no longer called by functions
+| * | b767c2b	 Adds default to switch statement in UpdateGlobals
+| * | f154e64	 Refactored update globals to switch statement
+| * | cb7d1a7	 Refactored utility functions to header files
+* | |   9c5b52e	 Merge branch 'Blocking'
+|\ \ \  
+| * | | 74d2f36	 Fixes stupid syntax error in menu()
+| |/ /  
+| * | 3b579e6	 Adds Habituation protocol
+| * | 87e9786	 Adds habituation protocol
+| * | 53bebfa	 unknown changes
+| * | 7806f29	 Refactor `init_serialport()` to include IDLE phase
+| * | 1cc1dab	 Refactor `init_serialport()` to include IDLE phase
+| * | c6e3bb3	 Raise and handle serialexception if no port
+| * | 7e2529a	 DONE ALL
+* | | 53e1cdb	 unknown probably bad
+| |/  
+|/|   
+| | * b4f1cad	 (origin/2FC_difference) SerialControl.py edited online with Bitbucket
+| | * 58d9989	 README.md edited online with Bitbucket
+| |/  
+|/|   
+* | d1707e7	 behaviourbox.ino edited online with Bitbucket Still same, soz
+* | 908b6cb	 behaviourbox.ino edited online with Bitbucket commented the bits that will replace the sensors, Nothing majorly changed
+|/  
+* b3d23b0	 fixed comment!
+* 2a4e2b2	 possible mode bug???
+* 0ecdb55	 Counter fixed???
+* 56e84a2	 working out spike counting
+* a071881	 update
+*   bb7ba46	 pull and merge
+|\  
+| * 3c0a133	 need to fix data logging thanks to new trial_num argument
+| * 4a5c9f5	 added commenting feature
+* | 6a75fbe	 unknown
+|/  
+* d80d797	 experiment code
+* ff04e4b	 syntax error
+* 17416ff	 fixed table in first comment
+* 057774e	 refactoring complete
+* c4f3840	 refactored the response conditions and reconsidered when I want the bad sound to play.
+* 64113c6	 refactoring response period
+* e5709c8	 Fixing the 'N' reward condition 	modified:   behaviourbox.ino
+* 2570fab	 header on every two lines
+* 8c72033	 left and right mode toggles in place'
+* c1c16fd	 Made quite a few changes to both programs. The output is clean, the reporting works, the percentages are calculated and display correctly. In addition the break_on lick works as expected. Bad tones are consistant in all failure states, and with the exception of conditioning can never be followed by a water drop.
+* 99b378d	 spelling error
+* d0129ee	 updated menu and manual mode and reporting
+* 0a4dbb8	 no includes keeping track of hit rate
+* c8917d1	 fixed a bug in the reporting of response. Seems to be stable now in all usage scenarios
+* aba11b3	 added animal mass to df as `weight` parameter
+* 12be711	 (origin/interactive) added an online menu of sorts to adjust the usefull parameters
+* 2ba485a	 Menu functionality?? 	modified:   SerialControl.py
+| * 98f8d18	 (origin/Waterlogging) reponse bug fix: no response during conditioning
+|/  
+* 76ca00d	 duplicate config table on each run
+* 01d136d	 tab dag
+* 9104425	 conditional reporting update
+* 52a229b	 conditional reporting update
+* dbe3742	 changes to logging and reporting
+* f9c09fa	 Serial changed
+* b12bb59	 adjusted printing to be clearer
+* f5773fb	 trial_df declaration at start of trial is consolid -ated into one expression. 	modified:   SerialControl.py
+* 1002b64	 Today's experiment  On branch master  Your branch is ahead of 'origin/master' by 2 commits.    (use "git push" to publish your local commits)
+* 862fb13	 fixed syntax error
+* 89e018e	 returned water port logging behavior
+* 05da6b1	 fixed?
+* aa87080	 fixed counting ?
+* 175d04b	 why?
+* bf7fb0c	 rewrote lickChange to lick counted
+* 2ab2ce4	 rewrote lickChange again
+* f8a5731	 update 000
+* 645f578	 (origin/feature_countlicks) implemented: needs testing
+* 0bbdbac	 senseLickChange now takes the sensor as an argument and acts on the global variables lickchange[sensor] and lickon[sensor]; this function returns nothing
+* 991dccd	 testing branch
+* fea447a	 README.md edited online with Bitbucket
+* bc4390a	 README.md edited online with Bitbucket
+* d0ae859	 README.md edited online with Bitbucket
+* 5ce0a86	 README.md edited online with Bitbucket
+* 43bc70d	 README.md edited online with Bitbucket
+| * a8803fe	 (origin/manualcontrol) settings for 151222
+| * 49c9b13	 (origin/=origin/manualcontrol) TODO
+|/  
+* 9c52d7a	 (origin/noarray) a tone plays if the animal gets shut out and a different tone plays if the animal gets the right choice; only on first lick after stimulus
+* d19de10	 fixed errors from the punishment implementation
+* 09b8054	 fixed water port logging
+* ba6c4f2	 hotfixes to compile
+* 300d896	 reward cond 'B' now delivers from both ports
+*   8f5c98b	 merge
+|\  
+| * 3c724d3	 format
+| * 529085e	 added break on wrong choice
+| * bfe4a2c	 (origin/punishment) now the program reports the first lick detected after the trial; whether it was a hit, miss, or wrong choice
+| * dc25ca3	 deleted the response parts of the data frame because it was unnecessary and I am setting the arduino to report on that any way
+| * c0991bf	 working on the break early
+| * b7816dc	 made waterVol a byte value; because it is never going to be above 255 with the water valve
+| | * 4382358	 (origin/hotfix00) speaker pin usage fixed, removed noise creation in senselick routine
+| | * 6cd44f7	 speaker pin declaration wfixed
+| | * 4acc5d4	 possible fixes?
+| |/  
+|/|   
+* | 7b7637e	 some hotfixes due to reporting
+* | 256f2a1	 hopefully fixed the bug with frequency reporting
+* | d2ec213	 (origin/arduino) added reporting of water valve and converted pin declarations to bytes (saves some memory that way)
+* |   5e73b7f	 Merge branch 'master' of https://bitbucket.org/andrew_henry_micallef/behaviour_box
+|\ \  
+| * | 4fbb50c	 README.md edited online with Bitbucket
+| * | fef834e	 README.md edited online with Bitbucket
+| * | f0ed3ba	 README.md edited online with Bitbucket
+* | | b540cb5	 changes
+|/ /  
+* | d9397fd	 manual frequency
+|/  
+*   6b2c42b	 merge
+|\  
+| * a3dd973	 vacuum line was messing with the chi; commented 465:467; will need to updat bbox for implementation
+* | bd7e56a	 test this
+* | 3d984a6	 manual frequency selector????
+* | 3f8439d	 changed my mind about that function; Also deletd the save port info as npy arrays ines
+* | 1d672da	 added loading bar function and transpose of frequencies
+|/  
+* 85cd72f	 save now in it's own function
+* d33e5f1	 reporting licks now gives time spent above threshold (a crude measure but this is going to be okay for working out hits and misses, a miss will be 0 time above threshold)
+*   e1c1a31	 merge fix
+|\  
+| * 02ce4f3	 (origin/reporting) fixed bug in which arduino ends trial early
+| * 81af6c2	 fixed reporting licks
+| * 5b8bad5	 adjusted reporting
+* | cf45b4d	 fixed bug on data.tab saving
+|/  
+* 9322eea	 (origin/triggering) fixed manual reporting
+* e18e124	 oldq
+* be3d5ff	 old
+* 7c3a5b3	 broken
+* 2bfc90b	 broken
+* 085fbca	 manual declaration of lick response
+*   dbeccbf	 Merge branch 'master' of https://bitbucket.org/andrew_henry_micallef/behaviour_box
+|\  
+| *   74f2692	 merge
+| |\  
+| * | 419a294	 unknown"
+* | | 78065de	 (origin/fixkwargs0, origin/fixkwargs) unknown
+| |/  
+|/|   
+* | 1f96b1c	 kwargs!!!!
+|/  
+* 5aecf7e	 (origin/SingleStim) triggering tested, works as expected
+* 92a8734	 added keyboard trigger
+* ad025ce	 included a --singlestim flag for doing aneasthetised exps.
+* d394092	 unknown
+* e1486c3	 changes to logging
+* 33d68aa	 more doc strings and datapath argument
+* f333ff2	 doc string for num(s)
+* 4931066	 made repears
+* 481fab1	 fixxed merge conflict
+*   8f86958	 Merge branch 'master' of https://bitbucket.org/andrew_henry_micallef/behaviour_box
+|\  
+| * 01c99ae	 some more function descriptions
+| * 510f96f	 made goto_interpreter a thing that can happen
+| * ffacdf0	 more descriptors
+| * cc58ecf	 fixed connections to be the ones currently using
+| * b05587e	 fixed connections to be the ones currently using
+| * a632ba0	 fixed connections to be the ones currently using
+| * 44e2b9a	 fixed connections to be the ones currently using
+| * dd97013	 README.md edited online with Bitbucket
+| * fe45e80	 README.md edited online with Bitbucket
+| * 460393d	 README.md edited online with Bitbucket
+| * 71ef2f8	 README.md edited online with Bitbucket
+* | 753a782	 (origin/brett) removed 'wecome back commander'; fixed a bug that caused program to freeze when cond == 'B'
+* | 80a6a79	 fixed permutations to be what I originally thought of when I thought permutations
+* | b510000	 timing bug: made ON OFF ms
+* | 5c12e59	 logic
+|/  
+* 3fc4ece	 final?
+* 44b8f3a	 changed thresholds
+* a8b45d0	 fixed fmt
+* 9ca31ce	 this should now save the data frames as csvs; the response and licking get's saved as a txt document
+*   18d4ff2	 Merge branch 'master' of https://bitbucket.org/andrew_henry_micallef/behaviour_box
+|\  
+| *   c0961e4	 merge
+| |\  
+| * | e80b277	 not sure
+| * | 73c56c3	 fixed mispell and also cleaned up permutation
+| * | 9eeacaa	 added arguments; also fixed bug where combinations were coming in sorted order. Now we acyually get all permutations
+| * | 820073b	 added arguments; also fixed bug where combinations were coming in sorted order. Now we acyually get all permutations
+* | | 395faf7	 t sure really
+| |/  
+|/|   
+* | 49f64c9	 toying
+* | a171d1d	 made this a bit clearer
+* | ce87d5d	 made this a bit clearer
+|/  
+* e3cbe68	 returned to expanding dataframe, until I can think of a more efficient option
+* 2138e7d	 changes
+*   baf1ce8	 freq
+|\  
+| * 66d2308	 colours working
+* | 7b7dce1	 freq
+* | 645f47e	 this is to report freq
+|/  
+* 8f9c89f	 Not sure what changed :wq
+*   241741c	 nothing new
+|\  
+| * 966feca	 this is needed
+| * 056006c	 LED lights
+| *   c6857b4	 Merge branch 'master' of github.com:AndrewMicallef/Behaviour_box
+| |\  
+| * | 8db0287	 behond
+* | | 3c17dfd	 nothing new
+| |/  
+|/|   
+* | 7411cd2	 pins now reflect real connections
+|/  
+* 5969cf8	 signal detection
+* 2d7264f	 done now, going home
+* 8fde2b7	 (origin/completerework) done now, going home
+* 0969f6c	 this is it
+* f6c0b94	 move
+* 156f46e	 added todo
+* a224dee	 added todo
+* 8b33779	 added todo
+* e22b0e8	 (origin/pythonWrapper) experiments
+* c842969	 this here
+* 9568a72	 time to fix the serial communications from the PC end
+* 38a46af	 arduino ready: needs python wrapper
+*   e6ab988	 Merge branch 'basicDual'
+|\  
+| * 25f5c23	 this
+| * 821c7f1	 SerialComms ready to deploy
+| * 360db87	 SerialComs
+| * b5f97f1	 compiles
+| * 9a45b9d	 (origin/dualSTIM) Reward period function
+| * a0d4005	 Reward period function WIP
+| * ff66808	 added active delay function with optional breaking
+| * 9682104	 rework directories
+| * 8261077	 Trial stimulus update
+| * e7ec063	 Trial start
+| * caf1ea8	 added descriptive header
+| * ab50ed4	 added descriptive header
+| * cc49fa4	 cleaning
+| * 30111aa	 another one
+| * fb17af9	 this
+| * 8c9959a	 this
+| * f3a701d	 this
+* | 610d0f5	 Update README.md
+* | af787b1	 Update README.md
+* | 408c798	 Update README.md
+* | 0c9bc5b	 Create README.md
+|/  
+* d403771	 first

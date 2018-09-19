@@ -23,7 +23,11 @@ fopen(s);
 
 %%
 %%operant conditioning
+
 default_values={'5','100','3000','3000','7000','3','50','5000','2000'};
+
+default_values={'5','100','3000','3000','7000','3','14','5000','2000'};
+
 
 prompt={'number of trials','stimulus Duration, enter value from avisoft' ...
         'time (ms) relative to trial onset that the stimulus starts,in this period every lick breaks the trial and start a new one',...

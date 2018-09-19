@@ -51,9 +51,12 @@ if (t_since(t_init) > t_stimONSET+(t_stimDUR-10)){ //in TrialStimulus() speakerP
  //digitalWrite(LED_BUILTIN,LOW);
  }
 
+
 if (t_since(t_init) >= t_stimONSET+t_stimDUR){
     digitalWrite(speakerTRG,LOW);
 }
+
+
 
    //if (print_resp_time) { //if both statements are true it prints the repsonse time
      //Serial.print("response_time:\t");
@@ -182,7 +185,11 @@ while (t==0) {
 
       if (t%1000 <5){
           digitalWrite(LED_BUILTIN, HIGH);
+
           //digitalWrite(trialPin, HIGH); 
+
+          digitalWrite(trialPin, HIGH); 
+
       }
       else {
           //digitalWrite(LED_BUILTIN, LOW);
@@ -221,7 +228,9 @@ int TrialStimulus () {
 //if (t_local >= 0){
 
     digitalWrite(speakerPin, LOW);
+
     digitalWrite(speakerTRG,HIGH);
+
     //digitalWrite(LED_BUILTIN,HIGH);
    
    // delay(80);

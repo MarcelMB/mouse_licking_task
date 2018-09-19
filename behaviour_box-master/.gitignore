@@ -1,0 +1,6 @@
+*.html
+*.tab
+*.pyc
+*.css
+*.ini
+./datapath/*

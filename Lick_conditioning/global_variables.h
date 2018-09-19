@@ -13,7 +13,10 @@ const byte lickSens=5;
 const byte lickEvents=6; //sends lick events to intan
 const byte rewardTime=8; //send solenoid opening time to intan
 const byte trialPin=10; //send trial start and end time to intan
+
 const byte speakerTRG=12;
+
+
 
 const String end_trial_msg ="-Status: Ready";
 

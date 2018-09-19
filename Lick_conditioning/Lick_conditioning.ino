@@ -40,7 +40,9 @@ void setup() {
           pinMode(speakerPin, OUTPUT);
           digitalWrite(speakerPin, HIGH); //audio is off in HIGH state
   pinMode(lickSens, INPUT);
+
   pinMode(speakerTRG,OUTPUT);
+  
 
 
 
