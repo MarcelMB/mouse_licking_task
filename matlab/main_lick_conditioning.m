@@ -26,7 +26,7 @@ fopen(s);
 
 default_values={'5','100','3000','3000','7000','3','50','5000','2000'};
 
-default_values={'5','100','3000','3000','7000','3','14','5000','2000'};
+%default_values={'5','100','3000','3000','7000','3','14','5000','2000'};
 
 
 prompt={'number of trials','stimulus Duration, enter value from avisoft' ...
